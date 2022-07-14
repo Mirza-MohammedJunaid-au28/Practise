@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-Editor</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Box Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <style></style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav>
+      <section id="nav-section">
+        <select id="size">
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="12" selected>12</option>
+          <option value="14">14</option>
+          <option value="16">16</option>
+          <option value="18">18</option>
+          <option value="20">20</option>
+          <option value="24">24</option>
+          <option value="28">28</option>
+          <option value="32">32</option>
+          <option value="64">64</option>
+          <option value="128">128</option>
+        </select>
+        <button id="bold"><b>B</b></button>
+        <button id="italic"><i>i</i></button>
+        <button id="underline"><u>U</u></button>
+        <button id="left"><i class="bx bx-align-left"></i></button>
+        <button id="center"><i class="bx bx-align-middle"></i></button>
+        <button id="right"><i class="bx bx-align-right"></i></button>
+        <button id="justify"><i class="bx bx-align-justify"></i></button>
+        <div id="font-details">
+          <input type="color" id="font-color" style="margin-right: 7px" />
+          <span>A</span>
+        </div>
+        <div id="bg-details">
+          <input type="color" id="bg-color" style="margin-right: 7px" />
+          <span><i class="bx bx-palette bx-sm"></i></span>
+        </div>
+      </section>
+    </nav>
+    <!-- Header -->
+
+    <!-- Main -->
+    <main>
+      <section id="editor">
+        <textarea id="text"></textarea>
+      </section>
+    </main>
+    <!-- Main -->
+  </body>
+  <script
+    src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+    integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./index.js"></script>
+</html>
